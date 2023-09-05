@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kioto</title>
+    <style>
+      body {
+        background: linear-gradient(
+          110.1deg,
+          rgb(34, 126, 34) 2.9%,
+          rgb(168, 251, 60) 90.3%
+        );
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      h1 {
+        text-align: center;
+        font-size: 50px;
+      }
+      h2 {
+        text-align: center;
+        font-size: 30px;
+      }
+      p {
+        background: aliceblue;
+        line-height: 1.5;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 17px auto;
+        width: 50%;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        padding: 15px;
+        border-radius: 25px;
+        width: 45%;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        padding: 20px 50px;
+        font-size: 16px;
+        border-radius: 20px;
+        border-width: 2px;
+        border: none;
+        box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.3);
+        color: aliceblue;
+        background-color: green;
+        transition: all 130ms ease-in-out;
+      }
+      button:hover {
+        background-color: #fe9d01;
+        color: aliceblue;
+        cursor: pointer;
+      }
+
+      hr {
+        width: 50%;
+      }
+      a{
+        color: green;
+      }
+      .contact{
+        text-align: center;
+        padding: 30px;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .color{
+        color: rgb(13, 55, 13);
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Kioto &#127983;</h1>
+      <h2>Things you should know about kioto...</h2>
+      <hr />
+      <p>It is one of the oldest Shinto shrines in Japan, built more than 100
+        years before Kyoto itself, which it protects from evil influences. One
+        of the Buddhist temples in Kyoto that is still preserved today, its
+        construction took more than 30 years. Kyoto is the perfect city for those who like a slower pace of
+        life. Some of the most important industries in Kyoto are handicrafts and
+        traditional Japanese customs such as kimono production and geisha districts.
+        <strong>The city is also famous for its festivals with more than a thousand
+        years of tradition such as the Gion Matsuri which is still celebrated today.</strong>
+        <br />
+        <a href="https://www.japan.go.jp/" target="_blank"><strong>See more!</strong></a></p>
+        <button>Click here</button>
+      <img
+        src="https://static.eldiario.es/clip/89c006eb-81f7-4dcf-b4c4-fb11ad73a83c_16-9-discover-aspect-ratio_default_0.jpg"
+        alt="Buddhist-temple"
+      />
+      <img
+        src="https://marcandoelpolo.com/wp-content/uploads/2017/01/Viajar-a-Japon-arcos-torii-en-Fushimi-Inari-Kyoto-portada.jpg"
+        alt="Shinto-Shrine"
+      />
+      <br />
+      <div class="contact">
+      <span class="color">Japan is waiting for you!</span> 
+    </div>
+      <script>
+        function clickHere() {
+          let name = prompt("What is your name?");
+          if(name){
+            alert("Hi, " + name + "! Thank you for your interest in learning more about this wonderful city. :D")
+          } else{
+            alert("Well... it will be for the next one, good luck!")
+          }
+        }
+        let clickButton = document.querySelector("button");
+        clickButton.addEventListener("click", clickHere);
+      </script>
+    </div>
+  </body>
+</html>
